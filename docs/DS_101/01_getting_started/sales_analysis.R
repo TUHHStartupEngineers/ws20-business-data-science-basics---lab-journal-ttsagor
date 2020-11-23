@@ -13,14 +13,14 @@ orderlines_tbl <- read_excel("C:/Users/sagor/Documents/GitHub/ws20-business-data
 bikeshops_tbl  <- read_excel("C:/Users/sagor/Documents/GitHub/ws20-business-data-science-basics---lab-journal-ttsagor/DS_101/00_data/01_bike_sales/01_raw_data/bikeshops.xlsx")
 
 # 3.0 Examining Data ----
-bikes_tbl
-glimpse(bikes_tbl)
+#bikes_tbl
+#glimpse(bikes_tbl)
 
-orderlines_tbl
-glimpse(orderlines_tbl)
+#orderlines_tbl
+#glimpse(orderlines_tbl)
 
-bikeshops_tbl
-glimpse(bikeshops_tbl)
+#bikeshops_tbl
+#glimpse(bikeshops_tbl)
 
 
 # 4.0 Joining Data ----
@@ -30,11 +30,11 @@ bike_orderlines_joined_tbl <- orderlines_tbl %>%
   left_join(bikes_tbl, by = c("product.id" = "bike.id")) %>%
   left_join(bikeshops_tbl, by = c("customer.id" = "bikeshop.id"))
 
-glimpse(bike_orderlines_joined_tbl)
+#glimpse(bike_orderlines_joined_tbl)
 
 # 5.0 Wrangling Data ----
 
-bike_orderlines_joined_tbl$category
+#bike_orderlines_joined_tbl$category
 
 bike_orderlines_joined_tbl %>% 
   select(category) %>%
