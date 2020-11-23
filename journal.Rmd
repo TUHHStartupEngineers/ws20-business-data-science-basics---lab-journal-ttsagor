@@ -18,13 +18,5 @@ knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
 
 **IMPORTANT:** You can delete everything in here and start fresh. You might want to start by not deleting anything above this line until you know what that stuff is doing.
 
-
-```{r, eval = TRUE}
-numbers <- 1:1000
-
-# This will print the first 10 elements of the vector numbers
-numbers[1:10]
-
-# This will plot a histogram of 100 random elements of the vector numbers
-hist(sample(numbers, 100, replace = T))
+```{r, code=readLines("C:/Users/sagor/Documents/GitHub/ws20-business-data-science-basics---lab-journal-ttsagor/DS_101/01_getting_started/sales_analysis.R")}
 ```

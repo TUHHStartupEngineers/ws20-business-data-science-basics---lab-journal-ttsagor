@@ -22,8 +22,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
-<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
+<link href="site_libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -336,24 +336,16 @@ $(document).ready(function () {
 <p><img src="images/logo.png" /></p>
 <div id="my-lab-journal" class="section level1">
 <h1><strong>My Lab Journal</strong></h1>
-<p>This is a template example for lab journaling. Students in the data science courses at the Institute of Entrepreneurship will use this template to learn R for business analytics. Students can replace this text as they wish.</p>
-<div id="how-to-use" class="section level2">
-<h2>How to use</h2>
-<ol style="list-style-type: decimal">
-<li><p>Fork the repository for this website and follow the instructions in the README to get set up: <a href="https://github.com/TUHHStartupEngineers/lab_journal_website">https://github.com/TUHHStartupEngineers/lab_journal_website</a></p></li>
-<li><p>Blog/journal what you are doing in R, by editing the <code>Journal.Rmd</code> file. See the <a href="https://tuhhstartupengineers.github.io/lab_journal_website/journal.html">Journal page</a> for an example of what to do to get started learning R. Moreover, you can edit/add/remove files, that are listed in the navigation bar under class notes. Modify that section as much as you want to make it your own place of knowledge. To change or add more entries, modify the <code>_site.yml</code> accordingly.</p></li>
-<li><p>See the <a href="https://tuhhstartupengineers.github.io/lab_journal_website/links.html">links page</a> for lots of helpful links on learning R.</p></li>
-<li><p>Change everything to make it your own.</p></li>
-</ol>
-<pre class="r"><code>numbers &lt;- 1:1000
+<pre class="r"><code># The easiest way to get magrittr is to load the whole tidyverse:
+library(&quot;tidyverse&quot;)
+# Alternatively, load just magrittr:
+library(&quot;magrittr&quot;)
 
-# This will print the first 10 elements of the vector numbers
-numbers[1:10]</code></pre>
-<pre><code>##  [1]  1  2  3  4  5  6  7  8  9 10</code></pre>
-<pre class="r"><code># This will plot a histogram of 100 random elements of the vector numbers
-hist(sample(numbers, 100, replace = T))</code></pre>
-<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
-</div>
+iris %&gt;% head(n=3)</code></pre>
+<pre><code>##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+## 1          5.1         3.5          1.4         0.2  setosa
+## 2          4.9         3.0          1.4         0.2  setosa
+## 3          4.7         3.2          1.3         0.2  setosa</code></pre>
 </div>
 
 
