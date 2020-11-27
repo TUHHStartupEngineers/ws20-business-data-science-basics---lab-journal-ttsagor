@@ -57,7 +57,7 @@ sales_by_state_tbl %>%
   scale_y_continuous(labels = scales::dollar_format(big.mark = ".", 
                                                     decimal.mark = ",", 
                                                     prefix = "", 
-                                                    suffix = " €")) +
+                                                    suffix = " \u20AC")) +
   labs(
     title    = "Revenue by State",
     subtitle = "Upward Trend",
@@ -86,7 +86,7 @@ sales_by_year_state_tbl <- new_bike_orderlines_wrangled_tbl %>%
   mutate(sales_text = scales::dollar(sales, big.mark = ".", 
                                      decimal.mark = ",", 
                                      prefix = "", 
-                                     suffix = " €"))
+                                     suffix = " \u20AC"))
 
 sales_by_year_state_tbl  
 
@@ -97,7 +97,7 @@ sales_by_year_state_tbl %>%
   scale_y_continuous(labels = scales::dollar_format(big.mark = ".", 
                                                     decimal.mark = ",", 
                                                     prefix = "", 
-                                                    suffix = " €")) +
+                                                    suffix = " \u20AC")) +
   labs(
     title = "Revenue by year and state",
     subtitle = "Each state has an upward trend",
