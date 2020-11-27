@@ -18,10 +18,18 @@ knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
 
 **IMPORTANT:** You can delete everything in here and start fresh. You might want to start by not deleting anything above this line until you know what that stuff is doing.
 
-Chatper one
+Chatper two
 ```{r, code=readLines("C:/Users/sagor/Documents/GitHub/ws20-business-data-science-basics---lab-journal-ttsagor/DS_101/01_getting_started/sales_analysis.R")}
 ```
 
-Chatper one
-```{r, code=readLines("chapter2.R")}
+Chatper three
+```{r, code=readLines("chapter3.R")}
+```
+
+Chatper four
+```{r, code=readLines("chapter4.R")}
+```
+
+Chatper five
+```{r, code=readLines("chapter5.R")}
 ```
